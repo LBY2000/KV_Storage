@@ -50,6 +50,7 @@ make
 `````
 cd ./example
 ./KVServer
+set asd 1234
 `````
 
 客户端执行：
@@ -57,6 +58,7 @@ cd ./example
 `````
 cd ./example
 ./Client
+get asd
 `````
 
 如果想要修改服务器的IP和端口，应该修改src/network/Acceptor.cpp中的IP+Port：
