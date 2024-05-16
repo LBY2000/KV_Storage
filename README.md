@@ -1,5 +1,5 @@
 # KV_Storage
-##### 项目简介
+### 项目简介
 
 本项目是仿照陈硕老师的Muduo网络库实现的KV存储引擎。
 
@@ -7,7 +7,7 @@
 
 自适应基数树的实现和可扩展Hash结构复用了之前的工作：[LBY2000/Hybird_Search_Index](https://github.com/LBY2000/Hybird_Search_Index)
 
-##### 项目特点
+### 项目特点
 
 * 底层使用Epoll边沿触发的IO多路复用，结合非阻塞I/O实现主从Reactor模型
 
@@ -15,7 +15,7 @@
 - 遵循RAII思想，使用智能指针管理内存，减少内存泄漏
 - 提供多种索引结构以实现灵活的存储引擎选择
 
-##### 配置ART和Extendible_hash的动态库
+#### 配置ART和Extendible_hash的动态库
 
 ```c++
 $ cd My_CCEH_DRAM
@@ -35,7 +35,7 @@ $ bash ./config_index_library.sh
 
 其后在编译文件中应当添加相应动态库的链接，即 -lartree 以及 -lexhash；为了使用跳表以外的索引结构，应当修改src/storege中的SkipListwork.cpp函数，并添加相应头文件
 
-##### 项目构建
+### 项目构建
 
 `````
 mkdir build && cd build
@@ -43,7 +43,7 @@ cmake ..
 make
 `````
 
-##### 项目运行
+### 项目运行
 
 服务端执行：
 
@@ -65,3 +65,8 @@ get asd
 https://github.com/LBY2000/KV_Storage/blob/73397b339ad2bfd3597b7fb1af88328e74a96845/src/network/Acceptor.cpp#L20-L22
 以及example/client.cpp中的IP+Port:
 https://github.com/LBY2000/KV_Storage/blob/2c1814321436266f7d942840660b70644e895fe6/example/client.cpp#L5-L7
+
+### To do:
+
+* 基于Raft算法，对其进行分布式扩展，使其成为分布式KV存储引擎
+* 将自己后续的项目和论文中的学习型索引集成到存储引擎的索引结构中来
