@@ -62,4 +62,4 @@ cd ./example
 如果想要修改服务器的IP和端口，应该修改src/network/Acceptor.cpp中的IP+Port：
 https://github.com/LBY2000/KV_Storage/blob/73397b339ad2bfd3597b7fb1af88328e74a96845/src/network/Acceptor.cpp#L20-L22
 以及example/client.cpp中的IP+Port:
-[https://github.com/LBY2000/KV_Storage/blob/2c1814321436266f7d942840660b70644e895fe6/example/client.cpp#L5-L6](https://github.com/LBY2000/KV_Storage/blob/2c1814321436266f7d942840660b70644e895fe6/example/client.cpp#L5-L7)
+https://github.com/LBY2000/KV_Storage/blob/2c1814321436266f7d942840660b70644e895fe6/example/client.cpp#L5-L6
