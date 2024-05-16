@@ -35,7 +35,7 @@ std::string SkipListWorker::handlerERR(std::vector<std::string>& cmdList) {
     return "error : please enter a correct command : SET/DEL/GET/LOAD/DUMP\n";
 }
 
-std::string SkipListWorker::handlerSET(std::vector<std::string>& cmdList) {
+std::string SkipListWorker::handlerSET(std::vector<std::string>& cmdList){
     if(cmdList.size() != 3){
         return "error : please enter a correct command : SET key value\n";
     }
