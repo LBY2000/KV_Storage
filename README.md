@@ -5,7 +5,7 @@
 
 本项目基于Reactor模式实现了网络I/O库，采用epoll模型实现网络I/O多路复用。内部采用跳表，自适应基数树，以及可扩展Hash等结构实现了KV存储引擎，支持数据插入，删除，查询和范围查询。
 
-自适应基数树的实现和可扩展Hash结构复用了之前的工作：[LBY2000/Hybird_Search_Index (github.com)](https://github.com/LBY2000/Hybird_Search_Index)
+自适应基数树的实现和可扩展Hash结构复用了之前的工作：[LBY2000/Hybird_Search_Index](https://github.com/LBY2000/Hybird_Search_Index)
 
 ##### 项目特点
 
