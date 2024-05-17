@@ -6,7 +6,7 @@
 #include "Socket.h"
 #include "SkipListWorker.h"
 #include <string>
-//https://hkrb7870j3.feishu.cn/docx/IBc1dMjZgotxnkxrnO3ctr1ynBa
+
 int main(){
     Server *server = new Server();
     server->NewConnect(
